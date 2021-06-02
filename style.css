@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.game {
+    width: 80%;
+    border: 1px solid rgb(223, 26, 26);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    /* border: 0.1px solid rgb(182, 178, 178); */
+    position: relative;
+    background-color: rgb(182, 178, 178);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* max-height: 10px; */
+}
+.cell::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.js-explosion {
+    position: absolute;
+    display: block;
+}.js-explosion img {
+    width: 80px;
+    height: auto;
+}
+
+
+.cell.js-smile {
+    background-color: rgb(221, 223, 135);
+}
+.cell.js-normal {
+    background-color: rgb(184, 145, 192);
+}
+.cell.js-anger {
+    background-color: rgb(228, 51, 51);
+}
+
+.cell.food {
+    background-color: green;
+}
+.cell.snake {
+    background-color: orangered;
+}
+.cell.head {
+    background-color: blue;
+}
